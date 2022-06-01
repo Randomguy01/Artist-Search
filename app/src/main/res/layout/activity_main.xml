@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".activities.main.MainActivity"
+  >
+
+  <!-- Toolbar -->
+  <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/main_toolbar"
+      style="@style/Widget.MaterialComponents.Toolbar.Primary"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:menu="@menu/main_appbar_menu"
+      app:title="Artist Search"
+      />
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <!-- Search Results List -->
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/main_resultsRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    tools:listitem="@layout/artist_item"
+    />
+
+  <TextView
+    android:id="@+id/main_hint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:text="@string/main_hint"
+    android:textAlignment="center"
+    tools:visibility="invisible"
+    />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

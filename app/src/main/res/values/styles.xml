@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Global -->
+
+  <!-- Circular Overlay -->
+  <style name="circularOverlay">
+    <item name="cornerSize">50%</item>
+  </style>
+</resources>

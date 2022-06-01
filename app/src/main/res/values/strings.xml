@@ -1,0 +1,13 @@
+<resources>
+  <!-- Global Strings -->
+  <string name="app_name">Artist Search</string>
+
+  <!-- Main Activity -->
+  <string name="main_hint">Press the 🔍 to start!</string>
+
+  <!-- AppBar Menu -->
+  <string name="main_menuItem_search">Search</string>
+
+  <!-- Artist Activity -->
+  <string name="artist_contentDescription_profilePhoto">Artists profile photo</string>
+</resources>
